@@ -10,7 +10,7 @@ function AddFaq() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:5000/api/faqs/add", {
+      await axios.post("https://sir-hw.onrender.com/api/faqs/add", {
         question,
         answer,
       });
