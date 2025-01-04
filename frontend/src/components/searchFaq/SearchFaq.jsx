@@ -12,7 +12,7 @@ function SearchFaq() {
     if (query === "") return;
     try {
       const res = await axios.get(
-        `http://localhost:5000/api/faqs/search?q=${query}&model=${model}`
+        `https://sir-hw.onrender.com/api/faqs/search?q=${query}&model=${model}`
       );
       console.log(res);
 
